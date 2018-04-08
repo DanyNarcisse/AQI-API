@@ -7,16 +7,16 @@ var async = require('async');
 var addressData = {}
 
 //Checking if file exists. If true, clears data
-if (fs.existsSync('./location.json')) {
-  fs.truncate('./location.json', 0, function() {
+if (fs.existsSync('./data-location.json')) {
+  fs.truncate('./data-location.json', 0, function() {
   })
 }
 
 //URL Google Map API
 function url(address)
 {
-  const key = 'YOUR_API_KEY'
-  return 'https://maps.googleapis.com/maps/api/geocode/json?address=' + address.city + address.country + '&key=' + key
+  const APIkey = 'YOUR_API_KEY'
+  return 'https://maps.googleapis.com/maps/api/geocode/json?address=' + address.city + address.country + '&key=' + APIkey
 }
 
 //Prompts user for city and country
@@ -50,8 +50,8 @@ async function Main()
 
       console.log(coordinates);
 
-      fs.appendFile('location.json', JSON.stringify(coordinates, null, 2), function(error){
-        console.log('Location stored in location.json');
+      fs.appendFile('data-location.json', JSON.stringify(coordinates, null, 2), function(error){
+        console.log('Location stored in data-location.json');
 
       });
     }

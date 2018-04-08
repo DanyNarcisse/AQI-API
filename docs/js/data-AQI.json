@@ -1,0 +1,50 @@
+{
+  "datetime": "2018-04-08T15:00:00",
+  "breezometer_aqi": 58,
+  "breezometer_description": "Moderate air quality",
+  "random_recommendations": {
+    "children": "You can go outside with the kids, but monitor their breathing & pay attention to notifications",
+    "sport": "Our recommendation: search for a cleaner area for a physical outdoor activity",
+    "health": "There is no real danger for people with health sensitivities. Just keep an eye out for changes in air quality for the next few hours",
+    "inside": "You don't have to stay inside, but it's recommended that you keep tracking the air quality",
+    "outside": "If you wish to stay outside for a long time, you should try to find a cleaner place nearby"
+  },
+  "dominant_pollutant_description": "Nitrogen dioxide",
+  "dominant_pollutant_text": {
+    "main": "The dominant pollutant is nitrogen dioxide (NO₂).",
+    "effects": "Exposure may cause increased bronchial reactivity in patients with asthma, lung function decline in patients with COPD and increased risk of respiratory infections, especially in young children",
+    "causes": "Main sources are fuel burning processes in industry and transportation."
+  },
+  "pollutants": {
+    "co": {
+      "pollutant_description": "Carbon monoxide",
+      "units": "ppb",
+      "concentration": 256.2
+    },
+    "no2": {
+      "pollutant_description": "Nitrogen dioxide",
+      "units": "ppb",
+      "concentration": 55.84
+    },
+    "o3": {
+      "pollutant_description": "Ozone",
+      "units": "ppb",
+      "concentration": 45.53
+    },
+    "pm10": {
+      "pollutant_description": "Inhalable particulate matter (<10µm)",
+      "units": "ug/m3",
+      "concentration": 29.85
+    },
+    "pm25": {
+      "pollutant_description": "Fine particulate matter (<2.5µm)",
+      "units": "ug/m3",
+      "concentration": 17.1
+    },
+    "so2": {
+      "pollutant_description": "Sulfur dioxide",
+      "units": "ppb",
+      "concentration": 0.44
+    }
+  }
+}
